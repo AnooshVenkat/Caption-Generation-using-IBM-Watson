@@ -1,4 +1,4 @@
-//The homepage uses HTML, CSS, Bootstrap and JavaScript.
+//The homepage uses HTML and CSS and Bootstrap and JavaScript.
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,7 +123,7 @@ var x="";
 				$.each(data, function(i){
 				var row = data[i];
 				console.log(row);
-				if(row.score>0.6) //Accepts any Class with Probability score greater than 0.6 (Minimum Threshold).
+				if(row.score>0.6) //Accepts all Classes with Probability score greater than 0.6 (Minimum Threshold).
 				{
 				html += '<tr>';
     				html += '<td>';
@@ -138,7 +138,7 @@ var x="";
 			}
 			else
 				{
-		            html+="<div>No Data</div>"; 
+		            html+="<div>No Data</div>"; //If no image is given as input
 				}
 			$('#scoretable').html(html);
 	}
