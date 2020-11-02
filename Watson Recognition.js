@@ -1,9 +1,9 @@
-// This node function identifies the dominant colour and class present in the Image and generates a suitable caption for the Image.
+// This node function identifies/extracts the dominant color and class present in the given image and generates a suitable caption for the Image.
 if (typeof msg.result == 'undefined') {
     return " ";
 }
 
-// Text Extraction
+// Extraction of Text
 if (typeof msg.result.images[0].text != 'undefined') {
     var image_text = msg.result.images[0].text;
     msg.payload = image_text;
